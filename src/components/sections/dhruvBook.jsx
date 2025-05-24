@@ -11,6 +11,57 @@ export default function DhruvBook({ content, type, position, variant, items = []
   const [selectedService, setSelectedService] = React.useState("");
   const [selectedDate, setSelectedDate] = React.useState("");
   const [selectedTime, setSelectedTime] = React.useState("");
+  const [formData, setFormData] = React.useState({
+    name: "",
+    email: "",
+    phone: "",
+    notes: ""
+  });
+  const [isSubmitting, setIsSubmitting] = React.useState(false);
+  const [submitStatus, setSubmitStatus] = React.useState(null);
+
+  const handleInputChange = (e) => {
+    const { name, value } = e.target;
+    setFormData(prev => ({
+      ...prev,
+      [name]: value
+    }));
+  };
+
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    setIsSubmitting(true);
+    setSubmitStatus(null);
+
+    try {
+      // Here you can add your form submission logic
+      // For now, we'll just simulate a successful submission
+      await new Promise(resolve => setTimeout(resolve, 1000));
+      
+      // Reset form
+      setSelectedService("");
+      setSelectedDate("");
+      setSelectedTime("");
+      setFormData({
+        name: "",
+        email: "",
+        phone: "",
+        notes: ""
+      });
+      
+      setSubmitStatus({
+        type: "success",
+        message: "Your appointment has been booked successfully! We'll contact you shortly to confirm."
+      });
+    } catch (error) {
+      setSubmitStatus({
+        type: "error",
+        message: "There was an error booking your appointment. Please try again."
+      });
+    } finally {
+      setIsSubmitting(false);
+    }
+  };
 
   if (!is_active) return null;
 
@@ -32,7 +83,15 @@ export default function DhruvBook({ content, type, position, variant, items = []
               </p>
             </div>
 
-            <form className="space-y-6">
+            {submitStatus && (
+              <div className={`p-4 rounded-lg ${
+                submitStatus.type === "success" ? "bg-green-50 text-green-700" : "bg-red-50 text-red-700"
+              }`}>
+                {submitStatus.message}
+              </div>
+            )}
+
+            <form className="space-y-6" onSubmit={handleSubmit}>
               {/* Service Selection */}
               <div className="space-y-2">
                 <label htmlFor="service" className="text-sm font-medium text-gray-700">
@@ -62,6 +121,7 @@ export default function DhruvBook({ content, type, position, variant, items = []
                   id="date"
                   value={selectedDate}
                   onChange={(e) => setSelectedDate(e.target.value)}
+                  required
                 />
               </div>
 
@@ -93,24 +153,55 @@ export default function DhruvBook({ content, type, position, variant, items = []
                 <h3 className="text-lg font-semibold text-[#1a1a1a]">Personal Information</h3>
                 <div className="space-y-2">
                   <label htmlFor="name" className="text-sm font-medium text-gray-700">Name</label>
-                  <Input type="text" id="name" name="name" />
+                  <Input 
+                    type="text" 
+                    id="name" 
+                    name="name" 
+                    value={formData.name}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="email" className="text-sm font-medium text-gray-700">Email</label>
-                  <Input type="email" id="email" name="email" />
+                  <Input 
+                    type="email" 
+                    id="email" 
+                    name="email" 
+                    value={formData.email}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="phone" className="text-sm font-medium text-gray-700">Phone</label>
-                  <Input type="tel" id="phone" name="phone" />
+                  <Input 
+                    type="tel" 
+                    id="phone" 
+                    name="phone" 
+                    value={formData.phone}
+                    onChange={handleInputChange}
+                    required
+                  />
                 </div>
                 <div className="space-y-2">
                   <label htmlFor="notes" className="text-sm font-medium text-gray-700">Special Requests</label>
-                  <Textarea id="notes" name="notes" rows={3} />
+                  <Textarea 
+                    id="notes" 
+                    name="notes" 
+                    rows={3}
+                    value={formData.notes}
+                    onChange={handleInputChange}
+                  />
                 </div>
               </div>
 
-              <Button type="submit" className="w-full bg-[#c8a97e] hover:bg-[#b38f5e]">
-                Book Appointment
+              <Button 
+                type="submit" 
+                className="w-full bg-[#c8a97e] hover:bg-[#b38f5e]"
+                disabled={isSubmitting}
+              >
+                {isSubmitting ? "Booking..." : "Book Appointment"}
               </Button>
             </form>
           </div>
