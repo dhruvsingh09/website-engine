@@ -6,28 +6,14 @@ import dynamic from "next/dynamic";
 
 // Dynamic component map for section types and variants - moved to client component
 const SECTION_MAP = {
-  header_1: dynamic(() => import("@/components/sections/Header1")),
-  header_2: dynamic(() => import("@/components/sections/Header2")),
-  header_3: dynamic(() => import("@/components/sections/Header3")),
-  hero_1: dynamic(() => import("@/components/sections/Hero1")),
-  hero_2: dynamic(() => import("@/components/sections/Hero2")),
-  about_1: dynamic(() => import("@/components/sections/About1")),
-  services_1: dynamic(() => import("@/components/sections/Services1")),
-  testimonial_1: dynamic(() => import("@/components/sections/Testimonial1")),
-  faq_1: dynamic(() => import("@/components/sections/FAQ1")),
-  contact_1: dynamic(() => import("@/components/sections/Contact1")),
-  footer_1: dynamic(() => import("@/components/sections/Footer1")),
-  footer_2: dynamic(() => import("@/components/sections/Footer2")),
-  gallery_1: dynamic(() => import("@/components/sections/Gallery1")),
-  gallery_2: dynamic(() => import("@/components/sections/Gallery2")),
-  features_1: dynamic(() => import("@/components/sections/Features1")),
-  features_2: dynamic(() => import("@/components/sections/Features2")),
-  pricing_1: dynamic(() => import("@/components/sections/Pricing1")),
-  pricing_2: dynamic(() => import("@/components/sections/Pricing2")),
-  cta_1: dynamic(() => import("@/components/sections/CTA1")),
-  cta_2: dynamic(() => import("@/components/sections/CTA2")),
-  team_1: dynamic(() => import("@/components/sections/Team1")),
-  team_2: dynamic(() => import("@/components/sections/Team2")),
+  // Dhruv Components - matching d2d schema exactly
+  dhruv_header: dynamic(() => import("@/components/sections/dhruvHeader")),
+  dhruv_hero: dynamic(() => import("@/components/sections/dhruvHero")),
+  dhruv_services: dynamic(() => import("@/components/sections/dhruvServices")),
+  dhruv_testimonials: dynamic(() => import("@/components/sections/dhruvTestimonials")),
+  dhruv_book: dynamic(() => import("@/components/sections/dhruvBook")),
+  dhruv_about: dynamic(() => import("@/components/sections/dhruvAbout")),
+  dhruv_footer: dynamic(() => import("@/components/sections/dhruvFooter.jsx"))
 };
 
 export default function PageContent({ page, sections, theme, config }) {
@@ -41,11 +27,11 @@ export default function PageContent({ page, sections, theme, config }) {
     <main>
       <h1 className="sr-only">{page.title}</h1>
       {sections.map((section) => {
-        const sectionKey = getComponentKey(section.type, section.variant);
-        const DynamicSection = SECTION_MAP[sectionKey];
+        // Get the component directly using the type from d2d schema
+        const DynamicSection = SECTION_MAP[section.type];
 
         if (!DynamicSection) {
-          console.warn(`No component found for section type: ${sectionKey}`);
+          console.warn(`No component found for section type: ${section.type}`);
           return null;
         }
 
@@ -54,6 +40,10 @@ export default function PageContent({ page, sections, theme, config }) {
             <DynamicSection
               content={section.content}
               items={section.items}
+              type={section.type}
+              is_active={section.is_active}
+              position={section.position}
+              variant={section.variant}
               theme={themeToUse}
               config={config}
             />

@@ -2,7 +2,7 @@
     "site": {
       "id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
       "subdomain": "d2d",
-      "name": "Demo Website",
+      "name": "Nelson",
       "is_active": true,
       "created_by": "c9557e00-5aec-4113-ae36-69f96b57e00f",
       "created_at": "2025-05-19T19:06:13.627779+00:00",
@@ -11,12 +11,12 @@
     "siteMeta": {
       "id": "fbebcbed-075a-4913-b241-aed2877ee21c",
       "site_id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
-      "title": "D2D Demo Website",
-      "description": "A demonstration of our modular website builder",
-      "og_image": "https://via.placeholder.com/1200x630",
-      "favicon": "https://via.placeholder.com/32x32",
-      "keywords": "demo, website, modular, builder",
-      "twitter_handle": "@demosite"
+      "title": "Nelson - Premium Hair Salon",
+      "description": "Our Hair Salon is the place created for women who appreciate high quality, perfect service and first-class look. Welcome to Nelson!",
+      "og_image": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
+      "favicon": "https://i.ibb.co/2LcZ3BQ/logo.webp",
+      "keywords": "hair salon, beauty salon, haircut, styling, coloring, treatment, professional stylist",
+      "twitter_handle": "@nelson_salon"
     },
     "config": {
       "id": "56a779ad-a561-41e5-b988-11bdc5628491",
@@ -40,23 +40,23 @@
     "theme": {
       "id": "d5ac8346-16a4-47d8-b7f0-4e4a42be8fcc",
       "site_id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
-      "name": "Default Theme",
-      "primary_color": "#2563eb",
-      "primary_hover": "#2563eb",
-      "secondary": "#f97316",
-      "secondary_hover": "#ea580c",
-      "accent": "#8b5cf6",
-      "accent_hover": "#7c3aed",
+      "name": "Nelson Theme",
+      "primary_color": "#1a1a1a",
+      "primary_hover": "#333333",
+      "secondary": "#c8a97e",
+      "secondary_hover": "#b38f5e",
+      "accent": "#c8a97e",
+      "accent_hover": "#b38f5e",
       "background": "#ffffff",
-      "foreground": "#0f172a",
-      "muted": "#f1f5f9",
-      "border": "#e2e8f0",
+      "foreground": "#1a1a1a",
+      "muted": "#f5f5f5",
+      "border": "#e5e5e5",
       "card": "#ffffff",
-      "card_foreground": "#0f172a",
+      "card_foreground": "#1a1a1a",
       "error": "#ef4444",
       "success": "#22c55e",
-      "footer": "#0f172a",
-      "footer_text": "#f8fafc",
+      "footer": "#1a1a1a",
+      "footer_text": "#ffffff",
       "overlay_dark": "rgba(0, 0, 0, 0.8)",
       "overlay_light": "rgba(255, 255, 255, 0.8)",
       "overlay_medium": "rgba(0, 0, 0, 0.4)"
@@ -71,139 +71,133 @@
           {
             "id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "header",
+            "type": "dhruv_header",
             "variant": "1",
             "position": 1,
             "is_active": true,
             "content": {
               "id": "9b742a78-b86f-4a6a-9f0c-f39747ec5d3f",
               "section_id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
-              "title": "New Section",
-              "subtitle": "Subtitle",
-              "description": "Description for the new section",
+              "title": "Nelson",
+              "subtitle": "Premium Hair Salon",
+              "description": "Experience the art of styling with our expert stylists",
               "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
               "background_url": null,
-              "cta_text": "Get Started",
-              "cta_link": "/contact"
+              "cta_text": "Book Now",
+              "cta_link": "/dhruvBook"
             },
             "items": []
           },
           {
             "id": "d7592df9-ae00-40a2-bdc5-fdddf326e59a",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "hero",
+            "type": "dhruv_hero",
             "variant": "2",
             "position": 2,
             "is_active": true,
             "content": {
               "id": "a6aa9cff-ca3a-47f2-934d-7a0e4fc0fcf3",
               "section_id": "d7592df9-ae00-40a2-bdc5-fdddf326e59a",
-              "title": "Build Beautiful barber shop",
-              "subtitle": "Modern Web Development",
-              "description": "Our modular website builder allows you to create stunning websites with ease. No coding required.",
+              "title": "Feel your new Nelson style",
+              "subtitle": "Premium Hair Salon",
+              "description": "Our Hair Salon is the place created for women who appreciate high quality, perfect service and first-class look. Welcome to Nelson!",
               "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
-              "background_url": null,
-              "cta_text": "Get Started",
-              "cta_link": "/contact"
+              "background_url": "https://images.unsplash.com/photo-1585747860715-2ba37e788b70?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2074&q=80",
+              "cta_text": "View our services",
+              "cta_link": "/services"
             },
             "items": []
           },
           {
             "id": "a088a10c-5616-42c0-a90a-c5b19544c757",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "services",
+            "type": "dhruv_services",
             "variant": "1",
             "position": 3,
             "is_active": true,
             "content": {
               "id": "9122a11d-fcb9-4109-a182-8f45fa2a3df1",
               "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
-              "title": "Our Services",
-              "subtitle": "What We Offer",
-              "description": "We provide a range of services to help your business grow online.",
+              "title": "Service beyond expectation",
+              "subtitle": "Our Services",
+              "description": "Our Hair Salon is the place created for women who appreciate high quality, perfect service and first-class look. Welcome to Nelson!",
               "image_url": null,
               "background_url": null,
-              "cta_text": "View All Services",
-              "cta_link": "/services"
+              "cta_text": "Read more about us",
+              "cta_link": "/about"
             },
             "items": [
               {
                 "id": "697983ce-5f8b-46db-89be-22e6471f3f5a",
                 "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
-                "title": "Web Development",
-                "subtitle": "Custom Solutions",
-                "description": "We build responsive, fast-loading websites that look great on any device.",
-                "icon": "code",
-                "image_url": "https://via.placeholder.com/400x300",
+                "title": "Haircut",
+                "subtitle": "Any cut to your taste",
+                "description": "Any cut to your taste followed by a professional styling session.",
+                "icon": "scissors",
+                "image_url": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                 "rating": null,
-                "price": null,
-                "duration": null,
+                "price": "30",
+                "duration": "45 min",
                 "tag": null,
                 "position": 0
               },
               {
                 "id": "8838565f-e964-40be-b8b8-5c0e38180d80",
                 "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
-                "title": "E-commerce",
-                "subtitle": "Online Stores",
-                "description": "Create your online store with secure payment processing and inventory management.",
-                "icon": "search",
-                "image_url": "https://via.placeholder.com/400x300",
+                "title": "Styling",
+                "subtitle": "Professional Styling",
+                "description": "Keep looking your best with our professional stylists.",
+                "icon": "comb",
+                "image_url": "https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                 "rating": null,
-                "price": null,
-                "duration": null,
+                "price": "25",
+                "duration": "30 min",
                 "tag": null,
                 "position": 1
               },
               {
                 "id": "19d93208-162d-46b8-a57c-69294d21ab14",
                 "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
-                "title": "SEO Optimization",
-                "subtitle": "Improve Rankings",
-                "description": "Enhance your online presence with our search engine optimization services.",
-                "icon": "share",
-                "image_url": "https://via.placeholder.com/400x300",
+                "title": "Color",
+                "subtitle": "Premium Coloring",
+                "description": "For premium result, at our salon, we combine professional techniques with high-quality products.",
+                "icon": "color",
+                "image_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
                 "rating": null,
-                "price": null,
-                "duration": null,
+                "price": "45",
+                "duration": "60 min",
                 "tag": null,
                 "position": 2
+              },
+              {
+                "id": "20d93208-162d-46b8-a57c-69294d21ab15",
+                "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
+                "title": "Treatment",
+                "subtitle": "Hair Care",
+                "description": "Looking to try something new with your hair? Our treatments will give you the look you want.",
+                "icon": "treatment",
+                "image_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "rating": null,
+                "price": "35",
+                "duration": "45 min",
+                "tag": null,
+                "position": 3
               }
             ]
           },
           {
-            "id": "53760ad3-06dc-43f9-ad66-c42937f90aeb",
-            "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "about",
-            "variant": "1",
-            "position": 3,
-            "is_active": true,
-            "content": {
-              "id": "c401e429-d283-45bb-948d-4b4485b97e6c",
-              "section_id": "53760ad3-06dc-43f9-ad66-c42937f90aeb",
-              "title": "New Section",
-              "subtitle": "Subtitle",
-              "description": "Description for the new section",
-              "image_url": null,
-              "background_url": null,
-              "cta_text": null,
-              "cta_link": null
-            },
-            "items": []
-          },
-          {
             "id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "testimonial",
+            "type": "dhruv_testimonials",
             "variant": "1",
             "position": 4,
             "is_active": true,
             "content": {
               "id": "48813f16-3aea-471a-8df6-b3f999c5617d",
               "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-              "title": "Customer Testimonials",
-              "subtitle": "What Our Clients Say",
-              "description": "Hear from our satisfied customers about their experience working with us.",
+              "title": "What clients say",
+              "subtitle": "Customer Testimonials",
+              "description": "Hear from our satisfied customers about their experience with us.",
               "image_url": null,
               "background_url": null,
               "cta_text": null,
@@ -213,11 +207,11 @@
               {
                 "id": "574ffd62-8291-4c24-9996-0022ae00bb93",
                 "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-                "title": "John Smith",
-                "subtitle": "CEO, TechStart",
-                "description": "Working with this team has been an incredible experience. Their attention to detail and commitment to excellence is unmatched.",
+                "title": "Helen Blackwood",
+                "subtitle": "Regular Client",
+                "description": "You don't get many offers while looking for a quick styling and cut. Thanks for the wonderful experience at Nelson Salon.",
                 "icon": null,
-                "image_url": "https://via.placeholder.com/100x100",
+                "image_url": "https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
                 "rating": 5,
                 "price": null,
                 "duration": null,
@@ -227,11 +221,11 @@
               {
                 "id": "8f60eb15-48cb-4332-9eb8-069c06116102",
                 "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-                "title": "Sarah Johnson",
-                "subtitle": "Marketing Director",
-                "description": "I was amazed at how quickly they understood our brand and delivered exactly what we needed. Highly recommended!",
+                "title": "Samantha Edison",
+                "subtitle": "Monthly Client",
+                "description": "I am happy that I have used some of your premium products and feel absolutely great. Your hairdressers are the best. Keep it up.",
                 "icon": null,
-                "image_url": "https://via.placeholder.com/100x100",
+                "image_url": "https://images.unsplash.com/photo-1500648767791-00dcc994a43e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
                 "rating": 5,
                 "price": null,
                 "duration": null,
@@ -241,36 +235,479 @@
               {
                 "id": "350c0ae3-a23d-4f07-988d-cc5d384732f7",
                 "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
-                "title": "Michael Brown",
-                "subtitle": "Small Business Owner",
-                "description": "Their work helped transform my business. Professional, responsive, and truly talented team.",
+                "title": "Emma Graceland",
+                "subtitle": "New Client",
+                "description": "Everything about this place is simply great! I loved the atmosphere and friendly staff. Incredible job, I wish you luck!",
                 "icon": null,
-                "image_url": "https://via.placeholder.com/100x100",
-                "rating": 4,
+                "image_url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                "rating": 5,
                 "price": null,
                 "duration": null,
                 "tag": null,
                 "position": 2
+              },
+              {
+                "id": "450c0ae3-a23d-4f07-988d-cc5d384732f8",
+                "section_id": "8453573e-d3e7-4e95-8057-9a3d7b8a5eed",
+                "title": "Fiona Willson",
+                "subtitle": "Regular Client",
+                "description": "Being in the business for almost a decade, I can tell that this place is absolutely worth your time and money. Thank you so much!",
+                "icon": null,
+                "image_url": "https://images.unsplash.com/photo-1506794778202-cad84cf45f1d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+                "rating": 5,
+                "price": null,
+                "duration": null,
+                "tag": null,
+                "position": 3
+              }
+            ]
+          },
+          {
+            "id": "b7592df9-ae00-40a2-bdc5-fdddf326e59b",
+            "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
+            "type": "dhruv_book",
+            "variant": "1",
+            "position": 5,
+            "is_active": true,
+            "content": {
+              "id": "b6aa9cff-ca3a-47f2-934d-7a0e4fc0fcf4",
+              "section_id": "b7592df9-ae00-40a2-bdc5-fdddf326e59b",
+              "title": "Book Your Appointment",
+              "subtitle": "Schedule Your Visit",
+              "description": "Choose your preferred service and time slot",
+              "image_url": null,
+              "background_url": null,
+              "cta_text": "Book Now",
+              "cta_link": "/appointment"
+            },
+            "items": [
+              {
+                "id": "697983ce-5f8b-46db-89be-22e6471f3f5a",
+                "section_id": "b7592df9-ae00-40a2-bdc5-fdddf326e59b",
+                "title": "Haircut",
+                "subtitle": "Any cut to your taste",
+                "description": "Any cut to your taste followed by a professional styling session.",
+                "icon": "scissors",
+                "image_url": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "price": "30",
+                "duration": "45 min",
+                "position": 0
+              },
+              {
+                "id": "8838565f-e964-40be-b8b8-5c0e38180d80",
+                "section_id": "b7592df9-ae00-40a2-bdc5-fdddf326e59b",
+                "title": "Styling",
+                "subtitle": "Professional Styling",
+                "description": "Keep looking your best with our professional stylists.",
+                "icon": "comb",
+                "image_url": "https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "price": "25",
+                "duration": "30 min",
+                "position": 1
+              },
+              {
+                "id": "19d93208-162d-46b8-a57c-69294d21ab14",
+                "section_id": "b7592df9-ae00-40a2-bdc5-fdddf326e59b",
+                "title": "Color",
+                "subtitle": "Premium Coloring",
+                "description": "For premium result, at our salon, we combine professional techniques with high-quality products.",
+                "icon": "color",
+                "image_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "price": "45",
+                "duration": "60 min",
+                "position": 2
+              },
+              {
+                "id": "20d93208-162d-46b8-a57c-69294d21ab15",
+                "section_id": "b7592df9-ae00-40a2-bdc5-fdddf326e59b",
+                "title": "Treatment",
+                "subtitle": "Hair Care",
+                "description": "Looking to try something new with your hair? Our treatments will give you the look you want.",
+                "icon": "treatment",
+                "image_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "price": "35",
+                "duration": "45 min",
+                "position": 3
               }
             ]
           },
           {
             "id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
             "page_id": "a6452a55-af24-40db-9490-42852c3e7b9a",
-            "type": "footer",
+            "type": "dhruv_footer",
             "variant": "1",
             "position": 6,
             "is_active": true,
             "content": {
               "id": "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
               "section_id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
-              "title": "New Section",
-              "subtitle": "Subtitle",
-              "description": "Description for the new section",
+              "title": "Nelson Hair Style",
+              "subtitle": "Your Beauty Destination",
+              "description": "Experience luxury and excellence in beauty care at Nelson Hair Style. We're committed to making you look and feel your best.",
+              "image_url": "/images/logo.png",
+              "links": [
+                { "label": "Home", "href": "/" },
+                { "label": "Services", "href": "/services" },
+                { "label": "About", "href": "/about" },
+                { "label": "Book Appointment", "href": "/dhruvBook" }
+              ],
+              "address": "123 Beauty Street, Fashion District, City",
+              "phone": "+1 (555) 123-4567",
+              "email": "info@nelsonhairstyle.com",
+              "hours": "Mon-Sat: 9AM - 8PM, Sun: 10AM - 6PM"
+            },
+            "items": []
+          }
+        ]
+      },
+      "services": {
+        "id": "b6452a55-af24-40db-9490-42852c3e7b9b",
+        "site_id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
+        "slug": "services",
+        "title": "Our Services",
+        "sections": [
+          {
+            "id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+            "page_id": "b6452a55-af24-40db-9490-42852c3e7b9b",
+            "type": "dhruv_header",
+            "variant": "1",
+            "position": 1,
+            "is_active": true,
+            "content": {
+              "id": "9b742a78-b86f-4a6a-9f0c-f39747ec5d3f",
+              "section_id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+              "title": "Nelson",
+              "subtitle": "Premium Hair Salon",
+              "description": "Experience the art of styling with our expert stylists",
+              "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
+              "background_url": null,
+              "cta_text": "Book Now",
+              "cta_link": "/dhruvBook"
+            },
+            "items": []
+          },
+          {
+            "id": "a088a10c-5616-42c0-a90a-c5b19544c757",
+            "page_id": "b6452a55-af24-40db-9490-42852c3e7b9b",
+            "type": "dhruv_services",
+            "variant": "1",
+            "position": 2,
+            "is_active": true,
+            "content": {
+              "id": "9122a11d-fcb9-4109-a182-8f45fa2a3df1",
+              "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
+              "title": "Our Services",
+              "subtitle": "Service Beyond Expectation",
+              "description": "Our Hair Salon is the place created for women who appreciate high quality, perfect service and first-class look. Welcome to Nelson!",
               "image_url": null,
               "background_url": null,
-              "cta_text": null,
-              "cta_link": null
+              "cta_text": "Book Appointment",
+              "cta_link": "/dhruvBook"
+            },
+            "items": [
+              {
+                "id": "697983ce-5f8b-46db-89be-22e6471f3f5a",
+                "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
+                "title": "Haircut",
+                "subtitle": "Any cut to your taste",
+                "description": "Any cut to your taste followed by a professional styling session.",
+                "icon": "scissors",
+                "image_url": "https://images.unsplash.com/photo-1599351431202-1e0f0137899a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "rating": null,
+                "price": "30",
+                "duration": "45 min",
+                "tag": null,
+                "position": 0
+              },
+              {
+                "id": "8838565f-e964-40be-b8b8-5c0e38180d80",
+                "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
+                "title": "Styling",
+                "subtitle": "Professional Styling",
+                "description": "Keep looking your best with our professional stylists.",
+                "icon": "comb",
+                "image_url": "https://images.unsplash.com/photo-1621607512214-68297480165e?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "rating": null,
+                "price": "25",
+                "duration": "30 min",
+                "tag": null,
+                "position": 1
+              },
+              {
+                "id": "19d93208-162d-46b8-a57c-69294d21ab14",
+                "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
+                "title": "Color",
+                "subtitle": "Premium Coloring",
+                "description": "For premium result, at our salon, we combine professional techniques with high-quality products.",
+                "icon": "color",
+                "image_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "rating": null,
+                "price": "45",
+                "duration": "60 min",
+                "tag": null,
+                "position": 2
+              },
+              {
+                "id": "20d93208-162d-46b8-a57c-69294d21ab15",
+                "section_id": "a088a10c-5616-42c0-a90a-c5b19544c757",
+                "title": "Treatment",
+                "subtitle": "Hair Care",
+                "description": "Looking to try something new with your hair? Our treatments will give you the look you want.",
+                "icon": "treatment",
+                "image_url": "https://images.unsplash.com/photo-1622286342621-4bd786c2447c?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2070&q=80",
+                "rating": null,
+                "price": "35",
+                "duration": "45 min",
+                "tag": null,
+                "position": 3
+              }
+            ]
+          },
+          {
+            "id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+            "page_id": "b6452a55-af24-40db-9490-42852c3e7b9b",
+            "type": "dhruv_footer",
+            "variant": "1",
+            "position": 3,
+            "is_active": true,
+            "content": {
+              "id": "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
+              "section_id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+              "title": "Dhruv's Salon",
+              "subtitle": "Your Beauty Destination",
+              "description": "Experience luxury and excellence in beauty care at Dhruv's Salon. We're committed to making you look and feel your best.",
+              "image_url": "/images/logo.png",
+              "links": [
+                { "label": "Home", "href": "/" },
+                { "label": "Services", "href": "/services" },
+                { "label": "About", "href": "/about" },
+                { "label": "Book Appointment", "href": "/dhruvBook" }
+              ],
+              "address": "123 Beauty Street, Fashion District, City",
+              "phone": "+1 (555) 123-4567",
+              "email": "info@dhruvssalon.com",
+              "hours": "Mon-Sat: 9AM - 8PM, Sun: 10AM - 6PM",
+              "cta_text": "Book Appointment",
+              "cta_link": "/dhruvBook"
+            },
+            "items": []
+          }
+        ]
+      },
+      "about": {
+        "id": "c6452a55-af24-40db-9490-42852c3e7b9c",
+        "site_id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
+        "slug": "about",
+        "title": "About Us",
+        "sections": [
+          {
+            "id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+            "page_id": "c6452a55-af24-40db-9490-42852c3e7b9c",
+            "type": "dhruv_header",
+            "variant": "1",
+            "position": 1,
+            "is_active": true,
+            "content": {
+              "id": "9b742a78-b86f-4a6a-9f0c-f39747ec5d3f",
+              "section_id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+              "title": "Nelson",
+              "subtitle": "Premium Hair Salon",
+              "description": "Experience the art of styling with our expert stylists",
+              "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
+              "background_url": null,
+              "cta_text": "Book Now",
+              "cta_link": "/dhruvBook"
+            },
+            "items": []
+          },
+          {
+            "id": "d088a10c-5616-42c0-a90a-c5b19544c758",
+            "page_id": "c6452a55-af24-40db-9490-42852c3e7b9c",
+            "type": "dhruv_about",
+            "variant": "1",
+            "position": 2,
+            "is_active": true,
+            "content": {
+              "id": "9122a11d-fcb9-4109-a182-8f45fa2a3df2",
+              "section_id": "d088a10c-5616-42c0-a90a-c5b19544c758",
+              "title": "About Nelson Hair Salon",
+              "subtitle": "Your Style, Our Passion",
+              "description": "Welcome to Nelson Hair Salon, where we combine artistry with expertise to create your perfect look. Our team of professional stylists is dedicated to providing you with exceptional service and stunning results.",
+              "image_url": "https://images.unsplash.com/photo-1560066984-138dadb4c035?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1974&q=80",
+              "background_url": null,
+              "cta_text": "Book Your Appointment",
+              "cta_link": "/dhruvBook"
+            },
+            "items": [
+              {
+                "id": "697983ce-5f8b-46db-89be-22e6471f3f5b",
+                "section_id": "d088a10c-5616-42c0-a90a-c5b19544c758",
+                "title": "Our Story",
+                "subtitle": "Established 2010",
+                "description": "Founded with a passion for hair styling and customer satisfaction, Nelson has grown to become one of the most trusted names in the industry.",
+                "icon": "story",
+                "position": 0
+              },
+              {
+                "id": "8838565f-e964-40be-b8b8-5c0e38180d81",
+                "section_id": "d088a10c-5616-42c0-a90a-c5b19544c758",
+                "title": "Our Mission",
+                "subtitle": "Excellence in Service",
+                "description": "We strive to provide exceptional hair care services while creating a welcoming and comfortable environment for all our clients.",
+                "icon": "mission",
+                "position": 1
+              },
+              {
+                "id": "19d93208-162d-46b8-a57c-69294d21ab16",
+                "section_id": "d088a10c-5616-42c0-a90a-c5b19544c758",
+                "title": "Our Promise",
+                "subtitle": "Quality Guaranteed",
+                "description": "We use only premium products and stay updated with the latest trends and techniques to ensure you always leave our salon feeling confident and beautiful.",
+                "icon": "star",
+                "position": 2
+              }
+            ]
+          },
+          {
+            "id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+            "page_id": "c6452a55-af24-40db-9490-42852c3e7b9c",
+            "type": "dhruv_footer",
+            "variant": "1",
+            "position": 3,
+            "is_active": true,
+            "content": {
+              "id": "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
+              "section_id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+              "title": "Dhruv's Salon",
+              "subtitle": "Your Beauty Destination",
+              "description": "Experience luxury and excellence in beauty care at Dhruv's Salon. We're committed to making you look and feel your best.",
+              "image_url": "/images/logo.png",
+              "links": [
+                { "label": "Home", "href": "/" },
+                { "label": "Services", "href": "/services" },
+                { "label": "About", "href": "/about" },
+                { "label": "Book Appointment", "href": "/dhruvBook" }
+              ],
+              "address": "123 Beauty Street, Fashion District, City",
+              "phone": "+1 (555) 123-4567",
+              "email": "info@dhruvssalon.com",
+              "hours": "Mon-Sat: 9AM - 8PM, Sun: 10AM - 6PM",
+              "cta_text": "Book Appointment",
+              "cta_link": "/dhruvBook"
+            },
+            "items": []
+          }
+        ]
+      },
+      "contact": {
+        "id": "d6452a55-af24-40db-9490-42852c3e7b9d",
+        "site_id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
+        "slug": "contact",
+        "title": "Contact Us",
+        "sections": [
+          {
+            "id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+            "page_id": "d6452a55-af24-40db-9490-42852c3e7b9d",
+            "type": "dhruv_header",
+            "variant": "1",
+            "position": 1,
+            "is_active": true,
+            "content": {
+              "id": "9b742a78-b86f-4a6a-9f0c-f39747ec5d3f",
+              "section_id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+              "title": "Nelson",
+              "subtitle": "Premium Hair Salon",
+              "description": "Experience the art of styling with our expert stylists",
+              "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
+              "background_url": null,
+              "cta_text": "Book Now",
+              "cta_link": "/dhruvBook"
+            },
+            "items": []
+          },
+          {
+            "id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+            "page_id": "d6452a55-af24-40db-9490-42852c3e7b9d",
+            "type": "dhruv_footer",
+            "variant": "1",
+            "position": 2,
+            "is_active": true,
+            "content": {
+              "id": "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
+              "section_id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+              "title": "Dhruv's Salon",
+              "subtitle": "Your Beauty Destination",
+              "description": "Experience luxury and excellence in beauty care at Dhruv's Salon. We're committed to making you look and feel your best.",
+              "image_url": "/images/logo.png",
+              "links": [
+                { "label": "Home", "href": "/" },
+                { "label": "Services", "href": "/services" },
+                { "label": "About", "href": "/about" },
+                { "label": "Book Appointment", "href": "/dhruvBook" }
+              ],
+              "address": "123 Beauty Street, Fashion District, City",
+              "phone": "+1 (555) 123-4567",
+              "email": "info@dhruvssalon.com",
+              "hours": "Mon-Sat: 9AM - 8PM, Sun: 10AM - 6PM",
+              "cta_text": "Book Appointment",
+              "cta_link": "/dhruvBook"
+            },
+            "items": []
+          }
+        ]
+      },
+      "appointment": {
+        "id": "e6452a55-af24-40db-9490-42852c3e7b9e",
+        "site_id": "4fafcd74-7ba1-48a2-937f-4a46a5010c37",
+        "slug": "appointment",
+        "title": "Book Appointment",
+        "sections": [
+          {
+            "id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+            "page_id": "e6452a55-af24-40db-9490-42852c3e7b9e",
+            "type": "dhruv_header",
+            "variant": "1",
+            "position": 1,
+            "is_active": true,
+            "content": {
+              "id": "9b742a78-b86f-4a6a-9f0c-f39747ec5d3f",
+              "section_id": "8d8d8b47-f240-4b64-9f8a-c0f72c737ced",
+              "title": "Nelson",
+              "subtitle": "Premium Hair Salon",
+              "description": "Experience the art of styling with our expert stylists",
+              "image_url": "https://i.ibb.co/2LcZ3BQ/logo.webp",
+              "background_url": null,
+              "cta_text": "Book Now",
+              "cta_link": "/dhruvBook"
+            },
+            "items": []
+          },
+          {
+            "id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+            "page_id": "e6452a55-af24-40db-9490-42852c3e7b9e",
+            "type": "dhruv_footer",
+            "variant": "1",
+            "position": 2,
+            "is_active": true,
+            "content": {
+              "id": "0c6e2e4e-78dd-4e53-b5f6-2c9b793feccc",
+              "section_id": "0a07df4f-b9fb-45f5-843a-f5ae513d0e61",
+              "title": "Dhruv's Salon",
+              "subtitle": "Your Beauty Destination",
+              "description": "Experience luxury and excellence in beauty care at Dhruv's Salon. We're committed to making you look and feel your best.",
+              "image_url": "/images/logo.png",
+              "links": [
+                { "label": "Home", "href": "/" },
+                { "label": "Services", "href": "/services" },
+                { "label": "About", "href": "/about" },
+                { "label": "Book Appointment", "href": "/dhruvBook" }
+              ],
+              "address": "123 Beauty Street, Fashion District, City",
+              "phone": "+1 (555) 123-4567",
+              "email": "info@dhruvssalon.com",
+              "hours": "Mon-Sat: 9AM - 8PM, Sun: 10AM - 6PM",
+              "cta_text": "Book Appointment",
+              "cta_link": "/dhruvBook"
             },
             "items": []
           }
